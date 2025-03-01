@@ -1,5 +1,10 @@
 {
+    "navbar":{
+        "appointment-app":"Appointment App"
+    },
     "language":{
-        "ptbr":"Portuguese"
+        "languages":"Select Language",
+        "ptbr":"Portuguese",
+        "enus":"English"
     }
 }

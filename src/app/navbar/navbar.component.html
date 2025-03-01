@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <div class="container flex">
+        <a class="navbar-brand" href="#">{{'navbar.appointment-app' | translate}}</a>
         <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -8,19 +8,19 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#"
                         role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Teste
+                        {{'language.languages' | translate}}
                     </a>
                     <ul class="dropdown-menu">
                         <li><a (click)="setLanguage('pt')" class="dropdown-item"
                                 href="#">{{'language.ptbr' | translate}}</a></li>
                         <li><a (click)="setLanguage('en')" class="dropdown-item"
-                                href="#">en-us</a></li>
+                                href="#">{{'language.enus' | translate}}</a></li>
                     </ul>
                 </li>
             </ul>
