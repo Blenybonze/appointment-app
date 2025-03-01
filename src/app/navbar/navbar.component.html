@@ -17,9 +17,9 @@
                         Teste
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item"
-                                href="#">pt-br</a></li>
-                        <li><a class="dropdown-item"
+                        <li><a (click)="setLanguage('pt')" class="dropdown-item"
+                                href="#">{{'language.ptbr' | translate}}</a></li>
+                        <li><a (click)="setLanguage('en')" class="dropdown-item"
                                 href="#">en-us</a></li>
                     </ul>
                 </li>
