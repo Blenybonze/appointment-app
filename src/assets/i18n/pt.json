@@ -9,7 +9,9 @@
         "create-appointment": "Criar compromisso",
         "date": "Data",
         "create": "Criar",
-        "delete":"Deletar"
+        "delete":"Deletar",
+        "title":"Título",
+        "action":"Ação"
     },
     "language": {
         "languages": "Selecione o idioma",

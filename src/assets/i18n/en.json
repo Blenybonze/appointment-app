@@ -9,7 +9,10 @@
         "create-appointment":"Create appointment",
         "date":"Date",
         "create":"Create",
-        "delete":"Delete"
+        "delete":"Delete",
+        "title":"Title",
+        "action":"Action"
+
     },
     "language":{
         "languages":"Select Language",

@@ -8,6 +8,7 @@
                     | translate}}</h2>
             </div>
         </div>
+
         <div class="row mt-3">
             <div class="col-md-6">
                 <input class="form-control"
@@ -20,25 +21,42 @@
                     placeholder="{{'appointment.date' | translate}}">
             </div>
             <div class="col-md-2">
-                <button class="btn btn-primary w-100"
+                <button [disabled]="!newAppointmentTitle"
+                    class="btn btn-primary w-100"
                     (click)="addAppointment()">{{'appointment.create'
-                    |
-                    translate}}</button>
+                    | translate}}</button>
             </div>
         </div>
     </div>
 
     <h2 *ngIf="appointments.length >= 1"
         class="text-center mt-5">{{'appointment.appointments'|translate}}</h2>
-    <ul class="list-group mt-3">
-        <li
-            class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
-            *ngFor="let appointment of appointments; index as i">
-            {{appointment.title}} {{appointment.date |
-            date:'dd.MM.yyyy'}}
-            <button class="btn btn-danger"
-                (click)="deleteAppointment(i)">{{'appointment.delete'|translate}}</button>
-        </li>
-    </ul>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="col-md-1">#</th>
+                <th scope="col" class="col-md-8">{{'appointment.title'
+                    |
+                    translate}}</th>
+                <th scope="col" class="col-md-2">{{'appointment.date'
+                    |
+                    translate}}</th>
+                <th scope="col"
+                    class="col-md-1">{{'appointment.action' |
+                    translate}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments;index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{appointment.title}}</td>
+                <td>{{appointment.date | date:'dd/MM/yyyy'}}</td>
+                <td>
+                    <button class="btn btn-danger"
+                        (click)="deleteAppointment(i)">{{'appointment.delete'|translate}}</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </div>
