@@ -1,6 +1,15 @@
 {
     "navbar": {
-        "appointment-app": "App de Agendamentos"
+        "appointment-app": "App de Compromissos",
+        "theme":"Tema"
+    },
+    "appointment": {
+        "appointments": "Compromissos",
+        "placeholder": "Seu compromisso",
+        "create-appointment": "Criar compromisso",
+        "date": "Data",
+        "create": "Criar",
+        "delete":"Deletar"
     },
     "language": {
         "languages": "Selecione o idioma",

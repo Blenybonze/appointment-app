@@ -1,6 +1,15 @@
 {
     "navbar":{
-        "appointment-app":"Appointment App"
+        "appointment-app":"Appointment App",
+        "theme":"Theme"
+    },
+    "appointment":{
+        "appointments": "Appointments",
+        "placeholder":"Your appointment",
+        "create-appointment":"Create appointment",
+        "date":"Date",
+        "create":"Create",
+        "delete":"Delete"
     },
     "language":{
         "languages":"Select Language",
